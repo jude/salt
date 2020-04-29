@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools >= 40.6.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [tool.black]
 exclude= """
 /(
@@ -15,4 +19,3 @@ use_parentheses = true
 line_length = 88
 ensure_newline_before_comments=true
 skip="salt/ext,tests/kitchen,templates"
-
